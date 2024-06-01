@@ -1,0 +1,8 @@
+适用于h7000设备的安卓内核
+注意事项：
+    1.默认配置文件（.config|arch/arm64/configs/h7000_defconfig）增加了doctor支持，原配置文件是arch/arm64/configs/h7000_defconfog.old
+编译命令：
+    确保依赖库安装完毕。
+    make menuconfig
+    make -j你的cpu的线程数
+所产生的内核文件在out/boot文件夹内
